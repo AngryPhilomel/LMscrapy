@@ -69,12 +69,11 @@ class LMSpider(scrapy.Spider):
 					try:
 						file_out.write(n.save())
 						file_out.write('\n')
-					else:
-						allItem.clear()
-						allObject.clear()	
-					finally:
-						allItem.clear()
-						allObject.clear()
+					except:
+						print("_______ERROR_______ERROR_______ERROR_______ERROR_______ERROR_______ERROR_______ERROR")
+	
+				allItem.clear()
+				allObject.clear()
 					
 					
 
